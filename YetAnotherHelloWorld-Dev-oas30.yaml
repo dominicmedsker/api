@@ -1,0 +1,32 @@
+openapi: "3.0.1"
+info:
+  title: "YetAnotherHelloWorld"
+  version: "2022-12-29T15:34:49Z"
+servers:
+- url: "https://gzgb7l1o70.execute-api.us-east-1.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: "/Dev"
+paths:
+  /helloworld:
+    get:
+      responses:
+        "200":
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+    post:
+      responses:
+        "200":
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+components:
+  schemas:
+    Empty:
+      title: "Empty Schema"
+      type: "object"
