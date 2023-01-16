@@ -6,7 +6,7 @@ servers:
 - url: "https://gzgb7l1o70.execute-api.us-east-1.amazonaws.com/{basePath}"
   variables:
     basePath:
-      default: "/Dev"
+      default: "Dev"
 paths:
   /helloworld:
     get:
